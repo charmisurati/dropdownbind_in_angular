@@ -1,0 +1,9 @@
+
+<div>
+  <select (change)="selectvalue($event)" [(ngModel)]="selected">
+    <option *ngFor="let c of arr" [value]="c.id">
+      {{c.city}}
+
+    </option>
+  </select>
+</div>
